@@ -3,7 +3,8 @@ const cartItems = [
     id: 'rec1JZlfCIBOPdcT2',
     title: 'Samsung Galaxy S8',
     price: '399.99',
-    img: 'https://dl.airtable.com/.attachments/64b266ad865098befbda3c3577a773c9/24497852/yedjpkwxljtb75t3tezl.png',
+    //img: 'https://dl.airtable.com/.attachments/64b266ad865098befbda3c3577a773c9/24497852/yedjpkwxljtb75t3tezl.png',
+    img: 'https://www.gigantti.fi/image/dv_web_D18000100267218/SAMS864BK/samsung-galaxy-s8-alypuhelin-musta--pdp_zoom-3000.jpg',
     amount: 1,
   },
   {
