@@ -1,5 +1,6 @@
 import Navbar from "./components/Navbar";
 import CartContainer from "./components/CartContainer";
+
 import Modal from "./components/Modal";
 import { useDispatch, useSelector } from 'react-redux';
 import { calculateTotals, getCartItems } from './features/cart/cartSlice';
@@ -12,6 +13,18 @@ function App() {
   useEffect(() => {
     dispatch(calculateTotals());
   }, [cartItems]);
+
+  useEffect(() => {
+    dispatch(getCartItems('random'));
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div className='loading'>
+        <h1>Loading...</h1>
+      </div>
+    );
+  }
 
   return (
     <main>
